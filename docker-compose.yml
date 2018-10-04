@@ -1,0 +1,18 @@
+
+version: '2'
+
+services: 
+
+  vscode:
+      image: docker-azure-dev
+      environment: 
+        - DISPLAY=10.211.131.44:0.0
+      hostname: vscodedev
+      tty: true
+      stdin_open: true
+      network_mode: bridge
+      volumes: 
+        - ./devhome:/home/developer
+        - ./tmp/.X11-unix:/tmp/.X11-unix
+      # command: bash
+      user: developer

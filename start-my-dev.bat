@@ -1,0 +1,1 @@
+docker run --rm -it -e DISPLAY=10.211.131.44:0.0 -v C:/dev/github/docker-azure-dev/devhome:/home/developer/devhome docker-azure-dev:latest 
